@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CompteController!{% endblock %}
+
+{% block content %}
+
+Bonjour {{ app.user.Firstname}} sur votre espace
+<h1>Mon compte</h1>
+- <a href="{{path('change_password')}}">-changre mon mot de passe</a> 
+{% endblock %}
